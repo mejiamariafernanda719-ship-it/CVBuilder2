@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Editor Theme (Dark & Earthy) */
+  --bg-dark: #121619;
+  --surface-dark: #1e2428;
+  --border-color: #323b42;
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --accent-earth: #8b7965; /* Serious earth/pastel tone */
+  --accent-earth-hover: #9c8a75;
+  --white: #ffffff;
+  --error: #ef4444;
+
+  /* CV Preview Theme (Corporative Light) */
+  --cv-bg: #f8f9fa; /* Slightly off-white for the background outside the paper */
+  --cv-paper: #ffffff;
+  --cv-text-main: #334155;
+  --cv-text-muted: #64748b;
+  --cv-heading: #0f172a;
+  --cv-accent: #334155; /* Dark gray/slate for corporative feel */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Global utility classes */
+input, textarea {
+  font-family: 'Inter', sans-serif;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background-color: transparent;
+  }
+}
